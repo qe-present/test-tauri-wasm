@@ -1,5 +1,5 @@
 import "./App.css";
-import init,{get_theme} from "../src-wasm/window/pkg/src_wasm";
+import init,{get_name} from "../src-wasm/pkg/src_wasm";
 import {useEffect} from "react";
 function App() {
     useEffect(() => {
@@ -7,7 +7,7 @@ function App() {
     }, []);
 
     async function greet() {
-        let a=await get_theme();
+        let a=await get_name();
         console.log(a);
     }
 

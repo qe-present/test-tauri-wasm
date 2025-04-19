@@ -10,7 +10,6 @@
     "tauri": "tauri",
     "rsw": "rsw",
     "tauri:dev": "tauri dev"
-
   },
   "dependencies": {
     "@tauri-apps/api": "^2.5.0",

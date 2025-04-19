@@ -1,13 +1,8 @@
-mod utils;
-
+use tauri_wasm_copy::api::app;
 use wasm_bindgen::prelude::*;
 
-#[wasm_bindgen]
-extern "C" {
-    fn alert(s: &str);
-}
 
 #[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, src-wasm!");
+pub async fn get_name() -> String {
+    app::get_name().await.unwrap()
 }
