@@ -33,10 +33,10 @@ dir = "my-template"
 
 #! 📦 -------- package: rsw-hello --------
 [[crates]]
-# #! npm package name (path: $ROOT/rsw-hello)
-name = "src-wasm"
+
+name = "src-wasm/app"
 # #! run `npm link`: `true` | `false`, default is `false`
-# link = false
+#link = true
 
 #! 📦 -------- package: @rsw/utils --------
 # [[crates]]
