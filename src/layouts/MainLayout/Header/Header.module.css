@@ -1,0 +1,15 @@
+/* src/layouts/MainLayout/Header/Header.module.css */
+.appBar {
+  z-index: 1200 !important; /* 调低z-index，但仍高于Sidebar */
+  width: 100% !important;
+  position: fixed !important; /* 改为固定定位 */
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 64px !important; /* 设置固定高度 */
+  background-color: #1976d2 !important; /* 强制设置背景色 */
+  color: white !important; /* 强制设置文字颜色 */
+  display: block !important; /* 确保显示 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important; /* 添加阴影增加视觉层次 */
+  pointer-events: auto !important; /* 确保可以点击 */
+}

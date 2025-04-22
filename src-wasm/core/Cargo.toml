@@ -1,5 +1,5 @@
 [package]
-name = "app"
+name = "src-wasm"
 version = "0.1.0"
 authors = []
 edition = "2021"
@@ -10,8 +10,7 @@ crate-type = ["cdylib", "rlib"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tauri-wasm-copy={workspace = true ,features = ["app"]}
-wasm-bindgen = {workspace = true}
+wasm-bindgen ={workspace = true}
 wasm-bindgen-futures = {workspace = true}
-
+tauri-wasm-copy={workspace = true ,features = ["core"]}
 

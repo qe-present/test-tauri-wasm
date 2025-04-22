@@ -29,7 +29,47 @@
   justify-content: center;
   text-align: center;
 }
+/* App.css */
+.greet-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
 
+.greet-button:hover {
+  background-color: blue;
+}
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: #396cd8;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 1em;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

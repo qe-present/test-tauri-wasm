@@ -1,0 +1,22 @@
+/* src/layouts/MainLayout/MainLayout.module.css */
+.root {
+    display: flex;
+    position: relative; /* 添加相对定位，使子元素能够进行绝对定位 */
+    height: calc(100vh - 64px); /* 视口高度减去Header高度 */
+    margin-top: 64px; /* 为Header留出空间 */
+    overflow: hidden; /* 防止内容溢出 */
+    box-sizing: border-box; /* 确保padding不会增加元素总宽高 */
+    width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  display: flex;
+  flex: 1;
+  padding-top: 64px;
+}

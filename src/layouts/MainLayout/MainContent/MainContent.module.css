@@ -1,0 +1,12 @@
+/* src/layouts/MainLayout/MainContent/MainContent.module.css */
+.main {
+  flex-grow: 1;
+  padding: 24px;
+  margin-left: 0; /* 移除左边距，因为现在使用flex布局 */
+  width: auto; /* 自动宽度 */
+  box-sizing: border-box;
+  overflow: auto; /* 允许内容滚动 */
+  position: relative; /* 添加相对定位 */
+  height: 100%; /* 使其高度与父容器一致 */
+  z-index: 1; /* 确保在侧边栏上方 */
+}

@@ -1,8 +1,10 @@
 [workspace]
 members = [
     "app",
-    "window"
+    "window",
+    "core"
 ]
 [workspace.dependencies]
 wasm-bindgen = "0.2.100"
 wasm-bindgen-futures = "0.4.50"
+tauri-wasm-copy = { path = "../../tauri-wasm-copy"}

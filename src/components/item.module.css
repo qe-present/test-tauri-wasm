@@ -1,0 +1,17 @@
+.listItemContainer {
+    margin-bottom: 8px;
+}
+.menuItem {
+    margin: 8px 0; /* 上下边距 */
+    border-radius: 4px; /* 圆角 */
+    background-color: rgba(0, 0, 0, 0.04); /* 轻微背景色 */
+    transition: all 0.2s ease; /* 平滑过渡效果 */
+}
+
+.menuItem:hover {
+    background-color: rgba(0, 0, 0, 0.08); /* 悬停时背景色加深 */
+    transform: translateX(4px); /* 轻微右移效果 */
+}
+.secondList {
+    margin-top: 16px;
+}

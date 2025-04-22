@@ -70,15 +70,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "eded382c5f5f786b989652c49544c4877d9f015cc22e145a5ea8ea66c2921cd2"
 
 [[package]]
-name = "semver"
-version = "1.0.26"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "56e6fa9c48d24d85fb3de5ad847117517440f6beceb7798af16b4a87d616b8d0"
-dependencies = [
- "serde",
-]
-
-[[package]]
 name = "serde"
 version = "1.0.219"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -121,6 +112,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "src-wasm"
+version = "0.1.0"
+dependencies = [
+ "tauri-wasm-copy",
+ "wasm-bindgen",
+ "wasm-bindgen-futures",
+]
+
+[[package]]
 name = "syn"
 version = "2.0.100"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -136,7 +136,6 @@ name = "tauri-wasm-copy"
 version = "0.1.0"
 dependencies = [
  "js-sys",
- "semver",
  "serde",
  "serde-wasm-bindgen",
  "serde_repr",
